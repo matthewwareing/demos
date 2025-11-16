@@ -6,6 +6,17 @@
 ## Tags
 - `reanimated`
 
+## Description
+
+Scan to try on your device
+
+## Usage
+
+```typescript
+type Item = {  img: string;  title: string;  subtitle: string;};
+// Example usage<AnimatedLayoutList  data={items}  layout="grid"  renderItem={(item, index, isExpanded) => (    // Custom render implementation  )}/>
+```
+
 ---
 
 *Documentation extracted from reactiive.io/demos*

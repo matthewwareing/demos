@@ -7,6 +7,18 @@
 - `reanimated`
 - `skia`
 
+## Description
+
+Scan to try on your device
+
+## Technical Implementation
+
+- Theme provider
+- Safe area context
+- Gesture handling
+- Image loading
+- Content layout
+
 ---
 
 *Documentation extracted from reactiive.io/demos*

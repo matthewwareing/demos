@@ -7,6 +7,17 @@
 - `reanimated`
 - `gesture-handler`
 
+## Description
+
+Scan to try on your device
+
+## Usage
+
+```typescript
+type Item = {  id: number;  title: string;  imageUri: string;  description: string;  count: number;};
+// The component automatically manages item selection and cart quantities
+```
+
 ---
 
 *Documentation extracted from reactiive.io/demos*

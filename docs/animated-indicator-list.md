@@ -7,6 +7,18 @@
 - `reanimated`
 - `gesture-handler`
 
+## Description
+
+Scan to try on your device
+
+## Usage
+
+```typescript
+type HeaderListItem = {  header: string;  type: 'header';};
+type ListItem = {  id: string;  type: 'item';  title: string;};
+// Example usage<AnimatedIndicatorList />;
+```
+
 ---
 
 *Documentation extracted from reactiive.io/demos*

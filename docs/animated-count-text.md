@@ -6,6 +6,17 @@
 ## Tags
 - `reanimated`
 
+## Description
+
+Scan to try on your device
+
+## Usage
+
+```typescript
+// Basic usage<AnimatedCount number={42} />;
+// With dynamic updatesconst [number, setNumber] = useState(1);<AnimatedCount number={number} />;
+```
+
 ---
 
 *Documentation extracted from reactiive.io/demos*

@@ -3,10 +3,28 @@
 > **Live Demo**: [View on reactiive.io](https://reactiive.io/demos/expandable-mini-player)
 > **Source Code**: [/src/animations/expandable-mini-player](/src/animations/expandable-mini-player)
 
+## Tags
+- `reanimated`
+
 ## Description
 
-*Documentation pending. Visit the [live demo](https://reactiive.io/demos/expandable-mini-player) to see this animation in action.*
+Scan to try on your device
+
+## What's This About?
+
+- Transitions between mini and full view
+- Shows track information
+- Includes playback controls
+- Handles gesture interactions
+- Maintains state during transitions
+
+## Usage
+
+```typescript
+type MiniPlayerProps = {  track: {    title: string;    artist: string;    artwork: string;  };  isPlaying?: boolean;  onPlayPause?: () => void;};
+// Basic usage<ExpandableMiniPlayer  track={{    title: 'Track Name',    artist: 'Artist Name',    artwork: 'artwork-url',  }}  isPlaying={false}  onPlayPause={() => {    // Handle play/pause  }}/>;
+```
 
 ---
 
-*This documentation needs to be populated. Please visit the live demo or contribute!*
+*Documentation extracted from reactiive.io/demos*

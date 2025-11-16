@@ -6,6 +6,17 @@
 ## Tags
 - `reanimated`
 
+## Description
+
+Scan to try on your device
+
+## Usage
+
+```typescript
+type AlertDrawerProps = {  title: string;  description: string;  buttonLabel: string;  onConfirm?: () => void;};
+// Example usage<AlertDrawer  title="Are you sure?"  description="Confirmation message here"  buttonLabel="Continue"  onConfirm={() => console.log('Confirmed')}/>;
+```
+
 ---
 
 *Documentation extracted from reactiive.io/demos*

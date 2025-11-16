@@ -7,6 +7,17 @@
 - `reanimated`
 - `gesture-handler`
 
+## Description
+
+Scan to try on your device
+
+## Usage
+
+```typescript
+type Use3DRotationStyleParams = {  x: Animated.SharedValue<number>;  y: Animated.SharedValue<number>;  maxSize: number;  maxRotation: number;};
+// Example usage<Animated3DParallax />;
+```
+
 ---
 
 *Documentation extracted from reactiive.io/demos*

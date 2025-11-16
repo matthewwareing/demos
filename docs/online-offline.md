@@ -4,8 +4,13 @@
 > **Source Code**: [/src/animations/online-offline](/src/animations/online-offline)
 
 ## Tags
-- `skia`
 - `reanimated`
+- `skia`
+- `react-native`
+
+## Description
+
+Scan to try on your device
 
 ---
 

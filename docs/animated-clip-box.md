@@ -7,6 +7,17 @@
 - `reanimated`
 - `skia`
 
+## Description
+
+Scan to try on your device
+
+## Usage
+
+```typescript
+type ClipBoxButtonProps = {  style: StyleProp<ViewStyle>;  initialRadius?: number;  primaryColor?: string;  highlightColor?: string;  description: string;  actionTitle: string;  onPress?: () => void;};
+// Example usage<ClipBoxButton  description="Button description here"  actionTitle="Click Me"  primaryColor="#4BA2E4"  highlightColor="#83C5F1"/>;
+```
+
 ---
 
 *Documentation extracted from reactiive.io/demos*

@@ -3,10 +3,29 @@
 > **Live Demo**: [View on reactiive.io](https://reactiive.io/demos/family-number-input)
 > **Source Code**: [/src/animations/family-number-input](/src/animations/family-number-input)
 
+## Tags
+- `reanimated`
+- `gesture-handler`
+
 ## Description
 
-*Documentation pending. Visit the [live demo](https://reactiive.io/demos/family-number-input) to see this animation in action.*
+Scan to try on your device
+
+## What's This About?
+
+- Shows animated number changes
+- Provides a button grid interface
+- Handles input validation
+- Includes reset functionality
+- Uses gradient overlay effects
+
+## Usage
+
+```typescript
+// Basic usage<FamilyNumberInput />
+// Component structure<SafeAreaView>  <AnimatedNumber value={input} />  <ButtonsGrid    input={input}    onUpdate={(value) => setInput(value)}    onBackspace={(value) => setInput(value)}    onReset={() => setInput(0)}    onMaxReached={() => {      // Handle maximum value reached    }}  /></SafeAreaView>
+```
 
 ---
 
-*This documentation needs to be populated. Please visit the live demo or contribute!*
+*Documentation extracted from reactiive.io/demos*

@@ -3,10 +3,30 @@
 > **Live Demo**: [View on reactiive.io](https://reactiive.io/demos/floating-bottom-bar)
 > **Source Code**: [/src/animations/floating-bottom-bar](/src/animations/floating-bottom-bar)
 
+## Tags
+- `reanimated`
+- `skia`
+
 ## Description
 
-*Documentation pending. Visit the [live demo](https://reactiive.io/demos/floating-bottom-bar) to see this animation in action.*
+Scan to try on your device
+
+## What's This About?
+
+- Floats above screen content
+- Shows tab icons
+- Handles navigation
+- Uses custom tab bar
+- Supports multiple screens
+
+## Usage
+
+```typescript
+// Basic usage<FloatingBottomBar />;
+// Navigation setupconst BottomTab = createBottomTabNavigator();
+<BottomTab.Navigator tabBar={(props) => <BottomTabBar {...props} />}>  <BottomTab.Screen name="Home" component={HomeScreen} />  <BottomTab.Screen name="Bookmark" component={BookmarkScreen} />  <BottomTab.Screen name="Add" component={AddScreen} />  <BottomTab.Screen name="Profile" component={ProfileScreen} />  <BottomTab.Screen name="Settings" component={SettingsScreen} /></BottomTab.Navigator>;
+```
 
 ---
 
-*This documentation needs to be populated. Please visit the live demo or contribute!*
+*Documentation extracted from reactiive.io/demos*

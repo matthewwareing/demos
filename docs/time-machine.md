@@ -4,9 +4,13 @@
 > **Source Code**: [/src/animations/time-machine](/src/animations/time-machine)
 
 ## Tags
-- `skia`
 - `reanimated`
 - `gesture-handler`
+- `skia`
+
+## Description
+
+Scan to try on your device
 
 ---
 

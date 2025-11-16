@@ -4,8 +4,24 @@
 > **Source Code**: [/src/animations/clock-time-picker](/src/animations/clock-time-picker)
 
 ## Tags
-- `skia`
 - `reanimated`
+- `skia`
+
+## Description
+
+Scan to try on your device
+
+### Clock
+
+```typescript
+<Clock date={sharedDateValue} size={100} />
+```
+
+### TimeRange
+
+```typescript
+<TimeRange  dates={timeOptions}  onDateChange={(dateMs) => {    'worklet';    handleTimeChange(dateMs);  }}/>
+```
 
 ---
 
