@@ -4,6 +4,16 @@ An ongoing collection of React Native animations crafted with Reanimated, Gestur
 
 Browse all demos at [reactiive.io/demos](https://reactiive.io/demos).
 
+## Documentation
+
+Comprehensive documentation for all 106 animations is available in the [/docs](/docs) folder. Each animation includes:
+- Detailed descriptions and behavior explanations
+- Usage examples with code snippets
+- Key features and technical implementation details
+- Links to live demos and source code
+
+[Browse all animation docs →](/docs)
+
 ## Highlights
 
 Demos 2024 - Rewind 👇
@@ -41,6 +51,7 @@ bun android # for Android
 src/
 ├── animations/   # Where the magic happens
 └── navigation/   # app navigation utils and hooks
+docs/             # Animation documentation and explainers
 ```
 
 ## Sponsors
