@@ -7,21 +7,25 @@
 - `reanimated`
 - `skia`
 
-## Description
-
-Scan to try on your device
-
 ### Clock
 
-```typescript
+A custom analog clock component built with Skia.
+
+```tsx
 <Clock date={sharedDateValue} size={100} />
 ```
 
 ### TimeRange
 
-```typescript
+A scrollable time selector with smooth animations and gradient overlays.
+
+```tsx
 <TimeRange  dates={timeOptions}  onDateChange={(dateMs) => {    'worklet';    handleTimeChange(dateMs);  }}/>
 ```
+
+GitHubAsk for support
+
+Clock Time Picker - FeedbackShare Your ThoughtsI value a lot your feedback! Help me improve by sharing your thoughts, suggestions, or reporting any issues you encounter. If you need assistance, send me an email at hello@reactiive.ioSend Feedback
 
 ---
 

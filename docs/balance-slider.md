@@ -7,16 +7,24 @@
 - `reanimated`
 - `gesture-handler`
 
-## Description
+## What's This About?
 
-Scan to try on your device
+This component creates an interactive slider where both sides respond to user input, maintaining a total of 100% between them. As one side increases, the other decreases proportionally, with smooth animations and visual feedback showing the current balance.
+
+## Technical Implementation
+
+The component uses gesture handling for precise control and features smart shrinking behavior when values reach certain thresholds. It supports custom colors, labels, and percentage limits for optimal visual presentation.
 
 ## Usage
 
-```typescript
+```tsx
 type BalanceSliderProps = {  width: number;  height: number;  onChange: (values: {    leftPercentage: number;    rightPercentage: number;  }) => void;  leftLabel: string;  rightLabel: string;  colors: {    left: {      box: string;      label: string;      percentage: string;    };    right: {      box: string;      label: string;      percentage: string;    };  };  leftPercentageLimitBeforeShift: number;  rightPercentageLimitBeforeShift: number;};
 // Example usage<BalanceSlider  width={300}  height={50}  leftLabel="Coffee"  rightLabel="Milk"  onChange={({ leftPercentage, rightPercentage }) => {    console.log(leftPercentage, rightPercentage);  }}/>;
 ```
+
+GitHubAsk for support
+
+Balance Slider - FeedbackShare Your ThoughtsI value a lot your feedback! Help me improve by sharing your thoughts, suggestions, or reporting any issues you encounter. If you need assistance, send me an email at hello@reactiive.ioSend Feedback
 
 ---
 

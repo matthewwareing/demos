@@ -8,19 +8,13 @@
 - `gesture-handler`
 - `react-native`
 
-## Description
-
-Scan to try on your device
-
 ## What's This About?
 
-- Slides up from the bottom of the screen
-- Responds to touch gestures for opening and closing
-- Features smooth spring animations
-- Includes a backdrop overlay
-- Supports dynamic content height changes
+The Action Tray creates a bottom sheet interface that:
 
 ## How It Works
+
+The component is built with two main parts:
 
 - ActionTray: The core component that:Handles gesture interactionsManages the sliding animationControls the tray's positionProvides imperative methods for programmatic control
 - Handles gesture interactions
@@ -51,12 +45,16 @@ Scan to try on your device
 
 ## Usage
 
-```typescript
+```tsx
 // Create a ref to control the trayconst ref = useRef<ActionTrayRef>(null);
 // Open the trayref.current?.open();
 // Close the trayref.current?.close();
 // Check if tray is activeconst isActive = ref.current?.isActive();
 ```
+
+GitHubAsk for support
+
+Action Tray - FeedbackShare Your ThoughtsI value a lot your feedback! Help me improve by sharing your thoughts, suggestions, or reporting any issues you encounter. If you need assistance, send me an email at hello@reactiive.ioSend Feedback
 
 ---
 

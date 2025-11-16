@@ -6,18 +6,13 @@
 ## Tags
 - `reanimated`
 
-## Description
-
-Scan to try on your device
-
 ## What's This About?
 
-- Adjusts indicator width to tab content
-- Animates between tab selections
-- Supports custom data input
-- Handles dynamic content sizes
+Dynamic Tab Indicator - FeedbackShare Your ThoughtsI value a lot your feedback! Help me improve by sharing your thoughts, suggestions, or reporting any issues you encounter. If you need assistance, send me an email at hello@reactiive.ioSend Feedback
 
 ## Technical Implementation
+
+The component uses:
 
 - Reanimated for smooth transitions
 - Dynamic width calculations
@@ -26,11 +21,15 @@ Scan to try on your device
 
 ## Usage
 
-```typescript
+```tsx
 type TabData = {  id: string;  title: string;  // other data properties};
 // Basic usageconst data: TabData[] = [  { id: '1', title: 'Tab 1' },  { id: '2', title: 'Tab 2' },  // ...more tabs];
 <DynamicTabIndicator data={data} />;
 ```
+
+GitHubAsk for support
+
+Dynamic Tab Indicator - FeedbackShare Your ThoughtsI value a lot your feedback! Help me improve by sharing your thoughts, suggestions, or reporting any issues you encounter. If you need assistance, send me an email at hello@reactiive.ioSend Feedback
 
 ---
 

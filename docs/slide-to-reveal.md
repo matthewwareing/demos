@@ -7,11 +7,13 @@
 - `gesture-handler`
 - `skia`
 
-## Description
+## What's This About?
 
-Scan to try on your device
+This component creates an interactive slide-to-reveal interface where users can slide to reveal a hidden code or content. It features a customizable width and height that adapts to the screen size, and supports gesture handling for smooth sliding interactions. The implementation is perfect for verification screens, security features, or any interface requiring a sliding gesture to reveal information.
 
 ## Technical Implementation
+
+The component uses:
 
 - Gesture handling
 - Screen adaptation
@@ -21,12 +23,16 @@ Scan to try on your device
 
 ## Usage
 
-```typescript
+```tsx
 // Basic usage<SlideToReveal />
 // With custom dimensions and code<SlideToReveal  code={112358}  width={windowWidth * 0.6}  height={80}/>
 // Full implementation<GestureHandlerRootView style={{ flex: 1 }}>  <View style={styles.container}>    <SlideToReveal      code={112358}      width={windowWidth * 0.6}      height={80}    />  </View></GestureHandlerRootView>
 // Window dimensionsconst { width: windowWidth } = useWindowDimensions();
 ```
+
+GitHubAsk for support
+
+Slide To Reveal - FeedbackShare Your ThoughtsI value a lot your feedback! Help me improve by sharing your thoughts, suggestions, or reporting any issues you encounter. If you need assistance, send me an email at hello@reactiive.ioSend Feedback
 
 ---
 

@@ -7,11 +7,13 @@
 - `reanimated`
 - `skia`
 
-## Description
+## What's This About?
 
-Scan to try on your device
+This component creates a scrollable list where items dynamically blur and transform based on their position relative to the scroll offset. As users scroll through the list, items smoothly transition between focused and blurred states, creating a depth effect.
 
 ## Technical Implementation
+
+The component leverages Reanimated for smooth scroll handling and implements:
 
 - Dynamic blur effects based on scroll position
 - Optimized scroll performance with event throttling
@@ -21,10 +23,14 @@ Scan to try on your device
 
 ## Usage
 
-```typescript
+```tsx
 // Core animation setupconst contentOffsetY = useSharedValue(0);const scrollHandler = useAnimatedScrollHandler({  onScroll: (event) => {    contentOffsetY.value = event.contentOffset.y;  },});
 // Item configuration<BlurredItem  width={windowWidth}  height={blurredItemContainerHeight}  index={index}  contentOffsetY={contentOffsetY}/>;
 ```
+
+GitHubAsk for support
+
+Blurred Scroll - FeedbackShare Your ThoughtsI value a lot your feedback! Help me improve by sharing your thoughts, suggestions, or reporting any issues you encounter. If you need assistance, send me an email at hello@reactiive.ioSend Feedback
 
 ---
 

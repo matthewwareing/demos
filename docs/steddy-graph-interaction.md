@@ -7,11 +7,13 @@
 - `reanimated`
 - `skia`
 
-## Description
+## What's This About?
 
-Scan to try on your device
+This component creates an interactive graph visualization with a segmented control for different difficulty levels. It features smooth transitions between different score sets, customizable graph dimensions, and responsive layout. The implementation includes difficulty selection controls and a dynamic graph display, making it perfect for data visualization with interactive controls.
 
 ## Technical Implementation
+
+The component uses:
 
 - Segmented controls
 - Graph rendering
@@ -21,7 +23,7 @@ Scan to try on your device
 
 ## Usage
 
-```typescript
+```tsx
 // Basic usage<SteddyGraphInteraction />
 // Graph component<Graph  scores={scores}  canvasHeight={200}  canvasWidth={windowWidth}  padding={50}  maxValue={100}  lineScore={70}  style={{ marginTop: 20 }}/>
 // Segmented control<SegmentedControl  data={['Light', 'Standard', 'Pro']}  onPress={(item) => {    setSelectedDifficulty(item);  }}  width={windowWidth - 30}  height={56}  selected={difficulty}/>
@@ -29,6 +31,10 @@ Scan to try on your device
 // Window dimensionsconst { width: windowWidth } = useWindowDimensions();
 // Score calculationconst scores = useMemo(() => {  return ScoringMap[difficulty];}, [difficulty]);
 ```
+
+GitHubAsk for support
+
+Steddy Graph Interaction - FeedbackShare Your ThoughtsI value a lot your feedback! Help me improve by sharing your thoughts, suggestions, or reporting any issues you encounter. If you need assistance, send me an email at hello@reactiive.ioSend Feedback
 
 ---
 

@@ -6,18 +6,13 @@
 ## Tags
 - `skia`
 
-## Description
-
-Scan to try on your device
-
 ## What's This About?
 
-- Shows duration values from 1 to 12
-- Updates value through rotation
-- Uses custom SF Pro Rounded font
-- Adapts to screen width
+Duration Slider - FeedbackShare Your ThoughtsI value a lot your feedback! Help me improve by sharing your thoughts, suggestions, or reporting any issues you encounter. If you need assistance, send me an email at hello@reactiive.ioSend Feedback
 
 ## Technical Implementation
+
+The component uses:
 
 - Skia for rendering
 - Custom font loading
@@ -27,11 +22,15 @@ Scan to try on your device
 
 ## Usage
 
-```typescript
+```tsx
 type CircularSliderProps = {  minVal: number;  maxVal: number;  width: number;  height: number;  font: SkFont;  onValueChange: (value: number) => void;};
 // Basic usageconst font = useFont(sfProRoundedBold, 100);
 {  font && (    <CircularSlider      minVal={1}      maxVal={12}      width={300}      height={300}      font={font}      onValueChange={(value) => {        console.log('Selected duration:', value);      }}    />  );}
 ```
+
+GitHubAsk for support
+
+Duration Slider - FeedbackShare Your ThoughtsI value a lot your feedback! Help me improve by sharing your thoughts, suggestions, or reporting any issues you encounter. If you need assistance, send me an email at hello@reactiive.ioSend Feedback
 
 ---
 

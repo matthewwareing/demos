@@ -7,18 +7,13 @@
 - `reanimated`
 - `gesture-handler`
 
-## Description
-
-Scan to try on your device
-
 ## What's This About?
 
-- Delete and restore actions
-- Shake feedback for invalid actions
-- Gradient overlays for depth
-- Safe area handling
+Email Demo - FeedbackShare Your ThoughtsI value a lot your feedback! Help me improve by sharing your thoughts, suggestions, or reporting any issues you encounter. If you need assistance, send me an email at hello@reactiive.ioSend Feedback
 
 ## Technical Implementation
+
+The component uses:
 
 - Reanimated for list animations
 - Shared values for state management
@@ -28,12 +23,16 @@ Scan to try on your device
 
 ## Usage
 
-```typescript
+```tsx
 type EmailItem = {  id: string;  title: string;  content: string;};
 // Basic usage<EmailDemo />;
 // List item configurationconst ITEM_HEIGHT = 100;const ITEM_MARGIN = 10;
 // Custom list implementation<InteractiveList  data={items}  itemHeight={ITEM_HEIGHT + ITEM_MARGIN}  amountToShift={erasedItems}  renderItem={({ item }) => <ListItem item={item} itemHeight={ITEM_HEIGHT} />}/>;
 ```
+
+GitHubAsk for support
+
+Email Demo - FeedbackShare Your ThoughtsI value a lot your feedback! Help me improve by sharing your thoughts, suggestions, or reporting any issues you encounter. If you need assistance, send me an email at hello@reactiive.ioSend Feedback
 
 ---
 

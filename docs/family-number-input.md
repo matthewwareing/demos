@@ -7,24 +7,20 @@
 - `reanimated`
 - `gesture-handler`
 
-## Description
-
-Scan to try on your device
-
 ## What's This About?
 
-- Shows animated number changes
-- Provides a button grid interface
-- Handles input validation
-- Includes reset functionality
-- Uses gradient overlay effects
+Family Number Input - FeedbackShare Your ThoughtsI value a lot your feedback! Help me improve by sharing your thoughts, suggestions, or reporting any issues you encounter. If you need assistance, send me an email at hello@reactiive.ioSend Feedback
 
 ## Usage
 
-```typescript
+```tsx
 // Basic usage<FamilyNumberInput />
 // Component structure<SafeAreaView>  <AnimatedNumber value={input} />  <ButtonsGrid    input={input}    onUpdate={(value) => setInput(value)}    onBackspace={(value) => setInput(value)}    onReset={() => setInput(0)}    onMaxReached={() => {      // Handle maximum value reached    }}  /></SafeAreaView>
 ```
+
+GitHubAsk for support
+
+Family Number Input - FeedbackShare Your ThoughtsI value a lot your feedback! Help me improve by sharing your thoughts, suggestions, or reporting any issues you encounter. If you need assistance, send me an email at hello@reactiive.ioSend Feedback
 
 ---
 

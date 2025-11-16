@@ -6,10 +6,6 @@
 ## Tags
 - `reanimated`
 
-## Description
-
-Scan to try on your device
-
 ---
 
 *Documentation extracted from reactiive.io/demos*

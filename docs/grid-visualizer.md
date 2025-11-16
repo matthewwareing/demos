@@ -6,11 +6,13 @@
 ## Tags
 - `skia`
 
-## Description
+## What's This About?
 
-Scan to try on your device
+This component creates an interactive visualization that displays numbers using a grid of animated squares. When tapped, it generates a random number and animates the grid to form that number's shape. The visualization includes a subtle radial gradient background and uses custom font rendering to create the number patterns, resulting in an engaging and modern display effect.
 
 ## Technical Implementation
+
+The component uses:
 
 - Skia for rendering
 - Custom font loading
@@ -20,10 +22,14 @@ Scan to try on your device
 
 ## Usage
 
-```typescript
+```tsx
 // Component propstype GridVisualizerProps = {  text: Animated.SharedValue<string | null>;  width: number;  height: number;  hSquaresAmount: number;  vSquaresAmount: number;  scaleFactor: number;  font: SkFont | null;  squareSize: number;};
 // Basic usage<GridVisualizer  text={text}  width={300}  height={340}  hSquaresAmount={35}  vSquaresAmount={50}  scaleFactor={70}  font={font}  squareSize={2.5}/>;
 ```
+
+GitHubAsk for support
+
+Grid Visualizer - FeedbackShare Your ThoughtsI value a lot your feedback! Help me improve by sharing your thoughts, suggestions, or reporting any issues you encounter. If you need assistance, send me an email at hello@reactiive.ioSend Feedback
 
 ---
 

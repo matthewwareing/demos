@@ -6,11 +6,9 @@
 ## Tags
 - `reanimated`
 
-## Description
-
-Scan to try on your device
-
 ## Usage
+
+The main component StaggeredText can be used to create animated text:
 
 ```tsx
 import { useRef } from 'react';import {  StaggeredText,  type StaggeredTextRef,} from './components/staggered-text';
@@ -20,11 +18,17 @@ const MyComponent = () => {  const textRef = useRef<StaggeredTextRef>(null);
 
 ### Controlling the Animation
 
+The component exposes three methods through its ref:
+
 ```typescript
 // Start the animationtextRef.current?.animate();
 // Reset to initial statetextRef.current?.reset();
 // Toggle animation (requires enableReverse prop)textRef.current?.toggleAnimate();
 ```
+
+GitHubAsk for support
+
+Everybody Can Cook - FeedbackShare Your ThoughtsI value a lot your feedback! Help me improve by sharing your thoughts, suggestions, or reporting any issues you encounter. If you need assistance, send me an email at hello@reactiive.ioSend Feedback
 
 ---
 

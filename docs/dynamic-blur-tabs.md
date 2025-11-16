@@ -7,18 +7,13 @@
 - `reanimated`
 - `expo-blur`
 
-## Description
-
-Scan to try on your device
-
 ## What's This About?
 
-- Shows blur effects while scrolling
-- Uses React Navigation for routing
-- Supports multiple screens
-- Freezes inactive screens
+Dynamic Blur Tabs - FeedbackShare Your ThoughtsI value a lot your feedback! Help me improve by sharing your thoughts, suggestions, or reporting any issues you encounter. If you need assistance, send me an email at hello@reactiive.ioSend Feedback
 
 ## Technical Implementation
+
+The component uses:
 
 - React Navigation's bottom tabs
 - Custom tab bar component
@@ -28,11 +23,15 @@ Scan to try on your device
 
 ## Usage
 
-```typescript
+```tsx
 // Basic usage<DynamicBlurTabs />;
 // Component structureconst BottomTab = createBottomTabNavigator();
 <BottomTab.Navigator  initialRouteName="home"  screenOptions={{    headerShown: false,  }}  tabBar={(props) => <BottomTabBar {...props} />}>  {screens.map((screen) => (    <BottomTab.Screen      key={screen.name}      name={screen.name}      component={screen.component}      options={{ freezeOnBlur: true }}    />  ))}</BottomTab.Navigator>;
 ```
+
+GitHubAsk for support
+
+Dynamic Blur Tabs - FeedbackShare Your ThoughtsI value a lot your feedback! Help me improve by sharing your thoughts, suggestions, or reporting any issues you encounter. If you need assistance, send me an email at hello@reactiive.ioSend Feedback
 
 ---
 

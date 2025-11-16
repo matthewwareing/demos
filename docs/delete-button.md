@@ -6,19 +6,13 @@
 ## Tags
 - `skia`
 
-## Description
-
-Scan to try on your device
-
 ## What's This About?
 
-- Smooth expansion animation with a gooey effect
-- Close button that appears during confirmation
-- Dynamic text transitions between states
-- Gesture-based interactions
-- Customizable dimensions and text
+This component creates an interactive delete button that expands to reveal a confirmation state. It features:
 
 ## Technical Implementation
+
+The component leverages Skia for high-performance rendering and implements:
 
 - Gooey effect using Skia layer blending
 - Complex gesture handling with Skia touch events
@@ -31,11 +25,15 @@ Scan to try on your device
 
 ## Usage
 
-```typescript
+```tsx
 type DeleteButtonProps = {  onConfirmDeletion: () => void;  height: number;  width: number;  initialText?: string;  confirmText?: string;  additionalWidth: number;  closeOnConfirm?: boolean;};
 // Basic usage<DeleteButton  height={50}  width={150}  additionalWidth={80}  onConfirmDeletion={() => {    console.log('Confirmed deletion');  }}/>
 // Customized version<DeleteButton  height={50}  width={150}  additionalWidth={80}  initialText="Remove"  confirmText="Sure?"  closeOnConfirm={true}  onConfirmDeletion={() => {    handleDeletion();  }}/>
 ```
+
+GitHubAsk for support
+
+Delete Button - FeedbackShare Your ThoughtsI value a lot your feedback! Help me improve by sharing your thoughts, suggestions, or reporting any issues you encounter. If you need assistance, send me an email at hello@reactiive.ioSend Feedback
 
 ---
 

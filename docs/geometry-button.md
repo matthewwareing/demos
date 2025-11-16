@@ -6,11 +6,13 @@
 ## Tags
 - `skia`
 
-## Description
+## What's This About?
 
-Scan to try on your device
+This component creates an interactive button that features geometric animations using multiple circles. When pressed, the button triggers a visual effect that combines circle animations to create an engaging user interaction. The component allows customization of the number of circles and button size to achieve different visual densities and effects.
 
 ## Technical Implementation
+
+The component uses:
 
 - Custom button handling
 - Circle animations
@@ -20,9 +22,13 @@ Scan to try on your device
 
 ## Usage
 
-```typescript
+```tsx
 // Basic usage with customization<GeometryButton  circles={50}  size={100}  onPress={() => {    console.log('Button pressed');  }}/>
 ```
+
+GitHubAsk for support
+
+Geometry Button - FeedbackShare Your ThoughtsI value a lot your feedback! Help me improve by sharing your thoughts, suggestions, or reporting any issues you encounter. If you need assistance, send me an email at hello@reactiive.ioSend Feedback
 
 ---
 

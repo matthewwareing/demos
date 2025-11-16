@@ -8,10 +8,6 @@
 - `gesture-handler`
 - `skia`
 
-## Description
-
-Scan to try on your device
-
 ## Usage
 
 ```tsx
@@ -21,9 +17,15 @@ const App = () => {  return (    <CircularButton      size={48}      blastRadius
 
 ## Props
 
+The CircularButton component accepts the following props:
+
 ```typescript
 type CircularButtonProps = {  size: number; // Size of the circular button  blastRadius: number; // Radius of the blast effect animation  baseIcon?: React.ReactNode; // Custom icon for the base state (defaults to Plus icon)  activeIcon?: React.ReactNode; // Custom icon for the active state (defaults to Check icon)  autoReset?: boolean; // Whether to automatically reset the button state after animation (defaults to true)  onPress?: () => void; // Callback function called when the button is pressed};
 ```
+
+GitHubAsk for support
+
+Particles Button - FeedbackShare Your ThoughtsI value a lot your feedback! Help me improve by sharing your thoughts, suggestions, or reporting any issues you encounter. If you need assistance, send me an email at hello@reactiive.ioSend Feedback
 
 ---
 

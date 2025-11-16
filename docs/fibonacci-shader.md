@@ -7,19 +7,13 @@
 - `reanimated`
 - `skia`
 
-## Description
-
-Scan to try on your device
-
 ## What's This About?
 
-- Generates circular patterns
-- Allows pattern customization
-- Uses performance scaling
-- Supports interactive controls
-- Animates continuously
+Fibonacci Shader - FeedbackShare Your ThoughtsI value a lot your feedback! Help me improve by sharing your thoughts, suggestions, or reporting any issues you encounter. If you need assistance, send me an email at hello@reactiive.ioSend Feedback
 
 ## Technical Implementation
+
+The component uses:
 
 - Skia for shader rendering
 - Runtime shader compilation
@@ -29,12 +23,16 @@ Scan to try on your device
 
 ## Usage
 
-```typescript
+```tsx
 // Basic usage<FibonacciShader />;
 // Component parametersconst RESCALE_FACTOR = 4; // Performance vs qualityconst MAX_CIRCLES_AMOUNT = 350; // Maximum circles to render
 // Shader controlsconst N = useSharedValue(5.0); // Number of circlesconst magicalMul = useSharedValue(2.4); // Pattern multiplier
 // Animation timingiTime.value = withRepeat(  withTiming(15, {    duration: 20000,    easing: Easing.linear,  }),  -1,  true);
 ```
+
+GitHubAsk for support
+
+Fibonacci Shader - FeedbackShare Your ThoughtsI value a lot your feedback! Help me improve by sharing your thoughts, suggestions, or reporting any issues you encounter. If you need assistance, send me an email at hello@reactiive.ioSend Feedback
 
 ---
 

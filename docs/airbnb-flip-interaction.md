@@ -7,10 +7,6 @@
 - `reanimated`
 - `expo-blur`
 
-## Description
-
-An interactive profile card that flips like a real credit card. Tap it to see smooth 3D animations as it rotates to show more details on the back.
-
 ## What it does
 
 Picture flipping over a credit card to read the details on the back. That's exactly what this component does, but digitally.
@@ -22,53 +18,37 @@ Below the card, there's text that changes depending on which side you're looking
 ## Usage
 
 ```tsx
-import { FlipCard } from './flip-interaction';
-import type { ProfileType } from './flip-interaction/components/card/types';
-
-const profile: ProfileType = {
-  name: 'John Doe',
-  location: 'San Francisco',
-  trips: 12,
-  reviews: 8,
-  yearsOnAirbnb: 3,
-  birthDecade: 'Born in the 90s',
-  languages: ['Speaks English', 'Speaks Spanish'],
-  isIdentityVerified: true,
-  visitedPlaces: [
-    {
-      name: 'Paris',
-      country: 'Paris, France',
-      code: 'FR',
-    },
-    {
-      name: 'Tokyo',
-      country: 'Tokyo, Japan',
-      code: 'JP',
-    },
-    // ... more places
-  ],
-};
-
-export default function App() {
-  return <FlipCard profile={profile} />;
-}
+import { FlipCard } from './flip-interaction';import type { ProfileType } from './flip-interaction/components/card/types';
+const profile: ProfileType = {  name: 'John Doe',  location: 'San Francisco',  trips: 12,  reviews: 8,  yearsOnAirbnb: 3,  birthDecade: 'Born in the 90s',  languages: ['Speaks English', 'Speaks Spanish'],  isIdentityVerified: true,  visitedPlaces: [    {      name: 'Paris',      country: 'Paris, France',      code: 'FR',      visitDate: 'March 2023',    },  ],};
+const [isFlipped, setIsFlipped] = useState(false);
+<TouchableOpacity onPress={() => setIsFlipped(!isFlipped)}>  <FlipCard profile={profile} isFlipped={isFlipped} angle="horizontal" /></TouchableOpacity>;
 ```
 
-## Key Features
+## How it works
 
-- **3D Flip Animation**: Smooth card flip using Reanimated transforms
-- **Blur Effect**: Background blur during flip animation using expo-blur
-- **Interactive**: Tap to flip between front and back
-- **Responsive**: Adapts to different screen sizes
-- **Type-Safe**: Full TypeScript support
+Uses React Native Reanimated for the animations. The card has two sides that are stacked on top of each other - when you tap, one rotates away while the other rotates into view.
 
-## Technical Implementation
+The blur effect in the background is timed to happen during the middle of the flip, so it looks like the card is the main focus.
 
-The flip animation uses:
-- `useSharedValue` and `useAnimatedStyle` from Reanimated
-- `rotateY` transform for the 3D flip effect
-- Interpolation to sync multiple animations
-- Blur intensity tied to flip progress
+Everything is built with TypeScript, so you get helpful autocomplete when setting up profile data.
+
+## File structure
+
+```typescript
+src/├── index.tsx                 # Main app├── constants.ts              # Spacing values└── flip-interaction/    └── components/card/        ├── index.tsx         # The flip card        ├── front.tsx         # Front side        ├── back.tsx          # Back side        └── pages/            # Content below card
+```
+
+The card front and back are separate components, so you can easily change how each side looks. The main card component handles all the flipping animation.
+
+I hope you find this useful! If you have any questions or feedback, feel free to reach out.
+
+## Minor Note
+
+For some reason, on the newArch the flipping animation looks blurred (as it feels that during the rotation the card gets rasterized). I'm currently investigating why this is happening.
+
+GitHubAsk for support
+
+Airbnb Flip Interaction - FeedbackShare Your ThoughtsI value a lot your feedback! Help me improve by sharing your thoughts, suggestions, or reporting any issues you encounter. If you need assistance, send me an email at hello@reactiive.ioSend Feedback
 
 ---
 

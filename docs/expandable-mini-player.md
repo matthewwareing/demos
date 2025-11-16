@@ -6,24 +6,20 @@
 ## Tags
 - `reanimated`
 
-## Description
-
-Scan to try on your device
-
 ## What's This About?
 
-- Transitions between mini and full view
-- Shows track information
-- Includes playback controls
-- Handles gesture interactions
-- Maintains state during transitions
+Expandable Mini Player - FeedbackShare Your ThoughtsI value a lot your feedback! Help me improve by sharing your thoughts, suggestions, or reporting any issues you encounter. If you need assistance, send me an email at hello@reactiive.ioSend Feedback
 
 ## Usage
 
-```typescript
+```tsx
 type MiniPlayerProps = {  track: {    title: string;    artist: string;    artwork: string;  };  isPlaying?: boolean;  onPlayPause?: () => void;};
 // Basic usage<ExpandableMiniPlayer  track={{    title: 'Track Name',    artist: 'Artist Name',    artwork: 'artwork-url',  }}  isPlaying={false}  onPlayPause={() => {    // Handle play/pause  }}/>;
 ```
+
+GitHubAsk for support
+
+Expandable Mini Player - FeedbackShare Your ThoughtsI value a lot your feedback! Help me improve by sharing your thoughts, suggestions, or reporting any issues you encounter. If you need assistance, send me an email at hello@reactiive.ioSend Feedback
 
 ---
 

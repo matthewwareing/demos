@@ -6,18 +6,13 @@
 ## Tags
 - `skia`
 
-## Description
-
-Scan to try on your device
-
 ## What's This About?
 
-- Shows/hides with animation
-- Includes share functionality
-- Uses pressable scale feedback
-- Handles QR code generation
+Empty Qr Code - FeedbackShare Your ThoughtsI value a lot your feedback! Help me improve by sharing your thoughts, suggestions, or reporting any issues you encounter. If you need assistance, send me an email at hello@reactiive.ioSend Feedback
 
 ## Technical Implementation
+
+The component uses:
 
 - QR code generation
 - Ref-based toggle control
@@ -27,12 +22,16 @@ Scan to try on your device
 
 ## Usage
 
-```typescript
+```tsx
 type QRCodeShareProps = {  qrCodeValue: string;};
 // Basic usage<EmptyQRCode />;
 // Custom implementationconst qrCodeShareRef = useRef<QRCodeShareRefType>(null);
 <PressableScale  onPress={() => {    qrCodeShareRef.current?.toggle();  }}>  <QRCodeShare ref={qrCodeShareRef} qrCodeValue="https://example.com" /></PressableScale>;
 ```
+
+GitHubAsk for support
+
+Empty Qr Code - FeedbackShare Your ThoughtsI value a lot your feedback! Help me improve by sharing your thoughts, suggestions, or reporting any issues you encounter. If you need assistance, send me an email at hello@reactiive.ioSend Feedback
 
 ---
 

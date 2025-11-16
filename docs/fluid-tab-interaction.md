@@ -7,10 +7,6 @@
 - `reanimated`
 - `expo-blur`
 
-## Description
-
-Scan to try on your device
-
 ## Usage
 
 ```tsx
@@ -22,9 +18,15 @@ import { SegmentedControl } from './components/segmented-control';
 
 ## Props
 
-```typescript
+The SegmentedControl component accepts the following props:
+
+```tsx
 type SegmentedControlProps<T extends { name: string; icon: string }> = {  data: readonly T[]; // Array of items to display in the control  onPress: (item: T) => void; // Callback function when an item is selected  selected: T; // Currently selected item  width: number; // Width of the control  height: number; // Height of the control};
 ```
+
+GitHubAsk for support
+
+Fluid Tab Interaction - FeedbackShare Your ThoughtsI value a lot your feedback! Help me improve by sharing your thoughts, suggestions, or reporting any issues you encounter. If you need assistance, send me an email at hello@reactiive.ioSend Feedback
 
 ---
 

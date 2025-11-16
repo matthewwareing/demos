@@ -7,11 +7,13 @@
 - `gesture-handler`
 - `skia`
 
-## Description
+## What's This About?
 
-Scan to try on your device
+This component implements a modern slider control that features fluid animations through metaball effects. As users interact with the slider, a dynamic bubble follows the touch point, displaying the current value. The slider adapts to different screen sizes while maintaining smooth animations and precise touch handling.
 
 ## Technical Implementation
+
+The component uses:
 
 - Skia for metaball effects
 - Responsive sizing
@@ -21,11 +23,15 @@ Scan to try on your device
 
 ## Usage
 
-```typescript
+```tsx
 type FluidSliderProps = {  width: number;  height: number;};
 // Basic usageconst { width } = useWindowDimensions();
 <FluidSlider width={width * 0.9} height={110} />;// Note: Height should account for the// animated metaball with text
 ```
+
+GitHubAsk for support
+
+Fluid Slider - FeedbackShare Your ThoughtsI value a lot your feedback! Help me improve by sharing your thoughts, suggestions, or reporting any issues you encounter. If you need assistance, send me an email at hello@reactiive.ioSend Feedback
 
 ---
 

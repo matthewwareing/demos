@@ -6,10 +6,6 @@
 ## Tags
 - `reanimated`
 
-## Description
-
-Scan to try on your device
-
 ## Usage
 
 ```tsx
@@ -21,9 +17,15 @@ const MyComponent = () => {  // Get shaking controls  const { isShaking, toggleS
 
 ### Animation Parameters
 
+You can customize the animation by modifying the animation config:
+
 ```tsx
 export const SHAKING_ANIMATION = {  BASE: {    AMPLITUDE: 1, // Base shake distance    AMPLITUDE_VARIATION: 0.2,    DURATION: 80, // Base animation duration (ms)    DURATION_VARIATION: 40,    ROTATION_AMPLITUDE: 1, // Base rotation angle    ROTATION_VARIATION: 2,    ROTATION_BASE: -3,    ROTATION_BASE_VARIATION: 6,  },} as const;
 ```
+
+GitHubAsk for support
+
+Shake To Delete - FeedbackShare Your ThoughtsI value a lot your feedback! Help me improve by sharing your thoughts, suggestions, or reporting any issues you encounter. If you need assistance, send me an email at hello@reactiive.ioSend Feedback
 
 ---
 

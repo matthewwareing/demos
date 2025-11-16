@@ -7,25 +7,21 @@
 - `reanimated`
 - `skia`
 
-## Description
-
-Scan to try on your device
-
 ## What's This About?
 
-- Floats above screen content
-- Shows tab icons
-- Handles navigation
-- Uses custom tab bar
-- Supports multiple screens
+Floating Bottom Bar - FeedbackShare Your ThoughtsI value a lot your feedback! Help me improve by sharing your thoughts, suggestions, or reporting any issues you encounter. If you need assistance, send me an email at hello@reactiive.ioSend Feedback
 
 ## Usage
 
-```typescript
+```tsx
 // Basic usage<FloatingBottomBar />;
 // Navigation setupconst BottomTab = createBottomTabNavigator();
 <BottomTab.Navigator tabBar={(props) => <BottomTabBar {...props} />}>  <BottomTab.Screen name="Home" component={HomeScreen} />  <BottomTab.Screen name="Bookmark" component={BookmarkScreen} />  <BottomTab.Screen name="Add" component={AddScreen} />  <BottomTab.Screen name="Profile" component={ProfileScreen} />  <BottomTab.Screen name="Settings" component={SettingsScreen} /></BottomTab.Navigator>;
 ```
+
+GitHubAsk for support
+
+Floating Bottom Bar - FeedbackShare Your ThoughtsI value a lot your feedback! Help me improve by sharing your thoughts, suggestions, or reporting any issues you encounter. If you need assistance, send me an email at hello@reactiive.ioSend Feedback
 
 ---
 

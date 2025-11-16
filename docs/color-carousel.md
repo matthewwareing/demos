@@ -7,11 +7,13 @@
 - `reanimated`
 - `skia`
 
-## Description
+## What's This About?
 
-Scan to try on your device
+This component creates an interactive carousel where each item transition is accompanied by a smooth color transformation in the background. The radial gradient background dynamically changes to match the active item's accent color, creating a cohesive and engaging visual experience.
 
 ## Technical Implementation
+
+The component leverages Skia for high-performance rendering and implements:
 
 - Smooth carousel transitions
 - Dynamic radial gradient backgrounds
@@ -21,12 +23,16 @@ Scan to try on your device
 
 ## Usage
 
-```typescript
+```tsx
 type CarouselItem = {  accentColor: string;  // other item properties};
 // Basic usage<ColorCarousel />
 // Custom implementation<Carousel  items={data}  maxRenderedItems={5}  // Must be an odd number  width={windowWidth}  activeIndex={activeIndex}/>
 // With background gradient<Canvas style={StyleSheet.absoluteFill}>  <Rect x={0} y={0} width={width} height={height}>    <RadialGradient      c={vec(width/2, height/2)}      r={width/2}      colors={colors}    />  </Rect></Canvas>
 ```
+
+GitHubAsk for support
+
+Color Carousel - FeedbackShare Your ThoughtsI value a lot your feedback! Help me improve by sharing your thoughts, suggestions, or reporting any issues you encounter. If you need assistance, send me an email at hello@reactiive.ioSend Feedback
 
 ---
 

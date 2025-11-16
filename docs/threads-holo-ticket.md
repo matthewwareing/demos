@@ -9,10 +9,6 @@
 - `skia`
 - `react-native`
 
-## Description
-
-Scan to try on your device
-
 ## Features
 
 - Interactive 3D flippable ticket with smooth animations
@@ -28,6 +24,8 @@ src/├── components/│   ├── ticket/│   │   ├── front-side
 ```
 
 ## Usage
+
+The Ticket component is the main component that provides the flippable ticket functionality:
 
 ```tsx
 import { Ticket } from './components/ticket';import { FrontSide } from './components/ticket/front-side';import { BackSide } from './components/ticket/back-side';
@@ -46,6 +44,10 @@ const App = () => {  return (    <View style={styles.container}>      <Ticket   
 - Pan: Swipe horizontally to rotate the ticket
 - Tap: Tap to snap the ticket to the nearest complete rotation
 - Holographic Effect: The holographic pattern responds to the ticket's rotation
+
+GitHubAsk for support
+
+Threads Holo Ticket - FeedbackShare Your ThoughtsI value a lot your feedback! Help me improve by sharing your thoughts, suggestions, or reporting any issues you encounter. If you need assistance, send me an email at hello@reactiive.ioSend Feedback
 
 ---
 
